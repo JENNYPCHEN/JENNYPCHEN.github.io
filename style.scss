@@ -1,0 +1,350 @@
+$font-h1h3:'Oswald', sans-serif;
+$font-h2h4p:'Montserrat', sans-serif;
+$fontcolorh:#ebd532;
+$colorgrey:#50425394;
+$colordarkblue:#020830;
+$colorblue:#111c68;
+
+body{
+    background-color:$colordarkblue !important;
+    color:#fff;
+  }
+  header{
+    text-align: center;
+    font-size:2rem;
+    color:$fontcolorh;
+    font-family: $font-h1h3;
+    text-transform: uppercase;
+    font-weight:bold;
+  }
+  /* la barre de navigation et le menu bugger*/  
+#hamnav {
+  width: 100%;
+  background: $colorgrey;
+  position:fixed;
+  top:0;
+}
+#hamitems { 
+  display: flex;
+   a {
+     flex-grow: 1;
+     flex-basis: 0;
+     padding: 10px;
+     color:$fontcolorh;
+     text-transform:uppercase;
+     text-decoration: none;
+     text-align: center;
+     font-weight:600;
+     letter-spacing:2px;
+     font-family: $font-h1h3;
+     font-size:1.2rem;
+    }
+    a:hover {
+      background:$colorgrey;
+     }
+  }
+#hamnav label, #hamburger { 
+  display: none; 
+}
+
+@media screen and (max-width: 768px){
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  #hamnav label { 
+    display: inline-block; 
+    color:$fontcolorh;
+    background: $colorgrey;
+    font-size: 1.2em;
+    padding: 10px;
+    cursor: pointer;
+  }
+  #hamitems { 
+    display: none;
+  }
+  #hamnav input:checked ~ #hamitems{ 
+    display: block; 
+  }
+}
+  /* accueil*/
+  #accueil{
+    background-image: url("background1.jpg");
+    background-size:cover;
+    background-position: bottom left;
+    text-align:center;
+    text-transform: uppercase;
+    padding:10%;
+    img{
+      width:200px;
+      height:auto;
+    }
+    h1{
+      font-family:$font-h1h3;
+      color:$fontcolorh;
+      font-weight: 800;
+    }
+    h2{
+      font-family:$font-h2h4p;
+      color:#fff;
+    }
+  }
+/*à propos*/
+#apropos{
+  padding:15% 5% 10% 5%;
+  font-family: $font-h2h4p;
+  font-size: 1.1rem;
+  color:#fff;
+ }
+/*programmation*/
+#programmation{
+  background: linear-gradient(180deg, $colordarkblue 0%,$colorblue 100%);
+  padding:2vw 5vw 2vw 5vw;
+  margin:5% 0 5% 0;
+  .date{
+    text-transform: uppercase;
+    font-family:$font-h1h3;
+    color:#fff;
+  }
+  .film{
+    text-transform: uppercase;
+    font-family:$font-h1h3;
+    color:$fontcolorh;
+  }
+  p{
+    text-transform:none;  
+    font-family:$font-h2h4p;
+    color:#fff;
+  }
+  a{
+    font-size:1.2rem;
+    font-family: $font-h2h4p;
+    text-decoration: none;
+  }
+}
+/*le diaporama*/
+.section-slider {
+  padding: 10px;
+  background-color:transparent;
+}
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  .block-slider {
+    display:inner-block;
+    width:250px;
+    margin-right: 20px;
+  }
+.img-slider {
+  flex-shrink: 0;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+}
+.slider::-webkit-scrollbar {
+  height: 10px;
+}
+.slider::-webkit-scrollbar-thumb {
+  background: $fontcolorh;
+  border-radius: 15px;
+  visibility: visible;
+}
+.slider::-webkit-scrollbar-track {
+  background:#ebd6328a;
+}
+/*banniere*/
+ #banniere{
+   background-image: url("background2.jpg");
+   background-size:cover;
+   background-position: bottom;
+   text-align:center;
+   padding:20% 10% 20% 10%;
+   blockquote{
+     font-size: 1.5rem;
+     font-family:$font-h2h4p;
+     color:#fff;
+    }
+    figcaption {
+      font-family:$font-h2h4p; 
+      color:#fff;
+    } 
+  }
+/*actualites*/
+#actualites{
+  padding:5vw;
+  img{
+    width:100%;
+    height:35%;
+    object-fit: cover;
+    margin-bottom: 5px;
+  }
+  h4{
+    text-transform: uppercase;
+    color:$fontcolorh;
+    font-family:$font-h1h3; 
+    font-weight: 100;
+  }
+  h5{
+    color:#fff;
+    font-family:$font-h1h3;
+  }
+  p{
+    color:white; 
+    font-family:$font-h2h4p;}
+    padding-bottom: 10px;
+  }
+/*réservation*/
+#reservation {
+  margin:10%;
+  label{
+    color:#fff;
+    font-family:$font-h1h3;
+    text-align:left;
+    }
+    .centeritem{
+      display:block;
+      text-align:center;
+    }
+}
+/*informations et le pied de page*/
+#lepieddepage{
+  background-color: #5042534f;
+} 
+.flexcontainer{
+  display:flex;
+  flex-direction: row;
+  margin:5% 5% 0% 5%;
+}
+.flexbox1{
+  width:50%;
+  color:#fff;
+  padding:5%;
+  font-family:$font-h2h4p;
+}
+.flexbox2{
+  width:50%;
+  color:#fff;
+  padding:2%;
+  font-family:$font-h2h4p;
+}
+.flexbox3{
+  width:50%;
+  text-align:center;
+  padding:2%;
+  margin-top:auto;
+  margin-bottom:auto;
+  a{
+    margin:0 5% 0 5%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .flexcontainer{
+    flex-direction: column;
+  }
+  .flexbox1,.flexbox2,.flexbox3{
+    text-align: center;
+    width:100%;
+  }
+}
+/*CSS animation:button*/
+.button{
+  background-color: #ebd63273;
+  border: none;
+  border-radius: 2rem;
+  padding: .75rem 1.25rem;
+  color: white;
+  font-family: $font-h1h3;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+  font-size: 1.2rem;
+  transition-duration: 0.4s;
+  &:hover{
+    color:#fff;
+    background-color: $fontcolorh;
+    transform:scale(1.1);
+  }
+}
+/*CSS animation les étoles*/
+.stars {
+  background-color:#f6e45c;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+  position:absolute;
+  z-index:3;
+}
+.star-1 {
+  margin-top: -10%;
+  margin-left: 80%;
+  animation-name: twinkle-1;
+  animation-duration: 2s;
+}
+.star-2 {
+  margin-top: -5%;
+  margin-left: 25%;
+  animation-name: twinkle-2;
+  animation-duration: 3s;
+}
+.star-3 {
+  margin-top: -8%;
+  margin-left: 50%;
+  animation-name: twinkle-3;
+  animation-duration: 1s;
+}
+.star-4 {
+  margin-top: -5%;
+  margin-left: 10%;
+  animation-name: twinkle-4;
+  animation-duration: 2s;
+}
+.star-5 {
+  margin-top: 7%;
+  margin-left: 13%;
+  animation-name: twinkle-1;
+  animation-duration: 3s;
+}
+.star-6 {
+  margin-top: 5%;
+  margin-left: 58%;
+  animation-name: twinkle-4;
+  animation-duration: 1s;
+}
+@keyframes twinkle-1 {
+  20% {
+    transform: scale(0.2);
+    opacity: 0.1;
+  }
+}
+@keyframes twinkle-2 {
+  80% {
+    transform: scale(0.1);
+    background-color: #fff;
+    opacity: 0.1;
+  }
+}
+@keyframes twinkle-3 {
+  50% {
+    transform: scale(0.3);
+    background-color: #fff;
+    opacity:0.5;
+  }
+}
+@keyframes twinkle-4 {
+  30% {
+    transform: scale(0.4);
+    background-color: silver;
+    opacity:0.3;
+  }
+}
+

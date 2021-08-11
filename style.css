@@ -1,0 +1,475 @@
+@charset "UTF-8";
+body {
+  background-color: #020830 !important;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  font-size: 2rem;
+  color: #ebd532;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* la barre de navigation et le menu bugger*/
+#hamnav {
+  width: 100%;
+  background: #50425394;
+  position: fixed;
+  top: 0;
+}
+
+#hamitems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#hamitems a {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  padding: 10px;
+  color: #ebd532;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+}
+
+#hamitems a:hover {
+  background: #50425394;
+}
+
+#hamnav label, #hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #hamitems a {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  #hamnav label {
+    display: inline-block;
+    color: #ebd532;
+    background: #50425394;
+    font-size: 1.2em;
+    padding: 10px;
+    cursor: pointer;
+  }
+  #hamitems {
+    display: none;
+  }
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
+}
+
+/* accueil*/
+#accueil {
+  background-image: url("background1.jpg");
+  background-size: cover;
+  background-position: bottom left;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10%;
+}
+
+#accueil img {
+  width: 200px;
+  height: auto;
+}
+
+#accueil h1 {
+  font-family: "Oswald", sans-serif;
+  color: #ebd532;
+  font-weight: 800;
+}
+
+#accueil h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+/*à propos*/
+#apropos {
+  padding: 15% 5% 10% 5%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+/*programmation*/
+#programmation {
+  background: -webkit-gradient(linear, left top, left bottom, from(#020830), to(#111c68));
+  background: linear-gradient(180deg, #020830 0%, #111c68 100%);
+  padding: 2vw 5vw 2vw 5vw;
+  margin: 5% 0 5% 0;
+}
+
+#programmation .date {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+}
+
+#programmation .film {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  color: #ebd532;
+}
+
+#programmation p {
+  text-transform: none;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+#programmation a {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+/*le diaporama*/
+.section-slider {
+  padding: 10px;
+  background-color: transparent;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -ms-scroll-snap-points-x: repeat(300px);
+      scroll-snap-points-x: repeat(300px);
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+}
+
+.slider .block-slider {
+  display: inner-block;
+  width: 250px;
+  margin-right: 20px;
+}
+
+.slider .img-slider {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider::-webkit-scrollbar {
+  height: 10px;
+}
+
+.slider::-webkit-scrollbar-thumb {
+  background: #ebd532;
+  border-radius: 15px;
+  visibility: visible;
+}
+
+.slider::-webkit-scrollbar-track {
+  background: #ebd6328a;
+}
+
+/*banniere*/
+#banniere {
+  background-image: url("background2.jpg");
+  background-size: cover;
+  background-position: bottom;
+  text-align: center;
+  padding: 20% 10% 20% 10%;
+}
+
+#banniere blockquote {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+#banniere figcaption {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+/*actualites*/
+#actualites {
+  padding: 5vw;
+  padding-bottom: 10px;
+}
+
+#actualites img {
+  width: 100%;
+  height: 35%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 5px;
+}
+
+#actualites h4 {
+  text-transform: uppercase;
+  color: #ebd532;
+  font-family: "Oswald", sans-serif;
+  font-weight: 100;
+}
+
+#actualites h5 {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+}
+
+#actualites p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*réservation*/
+#reservation {
+  margin: 10%;
+}
+
+#reservation label {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  text-align: left;
+}
+
+#reservation .centeritem {
+  display: block;
+  text-align: center;
+}
+
+/*informations et le pied de page*/
+#lepieddepage {
+  background-color: #5042534f;
+}
+
+.flexcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 5% 5% 0% 5%;
+}
+
+.flexbox1 {
+  width: 50%;
+  color: #fff;
+  padding: 5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.flexbox2 {
+  width: 50%;
+  color: #fff;
+  padding: 2%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.flexbox3 {
+  width: 50%;
+  text-align: center;
+  padding: 2%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.flexbox3 a {
+  margin: 0 5% 0 5%;
+}
+
+@media only screen and (max-width: 768px) {
+  .flexcontainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flexbox1, .flexbox2, .flexbox3 {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/*CSS animation:button*/
+.button {
+  background-color: #ebd63273;
+  border: none;
+  border-radius: 2rem;
+  padding: .75rem 1.25rem;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+  font-size: 1.2rem;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #ebd532;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*CSS animation les étoles*/
+.stars {
+  background-color: #f6e45c;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: absolute;
+  z-index: 3;
+}
+
+.star-1 {
+  margin-top: -10%;
+  margin-left: 80%;
+  -webkit-animation-name: twinkle-1;
+          animation-name: twinkle-1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.star-2 {
+  margin-top: -5%;
+  margin-left: 25%;
+  -webkit-animation-name: twinkle-2;
+          animation-name: twinkle-2;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.star-3 {
+  margin-top: -8%;
+  margin-left: 50%;
+  -webkit-animation-name: twinkle-3;
+          animation-name: twinkle-3;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.star-4 {
+  margin-top: -5%;
+  margin-left: 10%;
+  -webkit-animation-name: twinkle-4;
+          animation-name: twinkle-4;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.star-5 {
+  margin-top: 7%;
+  margin-left: 13%;
+  -webkit-animation-name: twinkle-1;
+          animation-name: twinkle-1;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.star-6 {
+  margin-top: 5%;
+  margin-left: 58%;
+  -webkit-animation-name: twinkle-4;
+          animation-name: twinkle-4;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes twinkle-1 {
+  20% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    opacity: 0.1;
+  }
+}
+
+@keyframes twinkle-1 {
+  20% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    opacity: 0.1;
+  }
+}
+
+@-webkit-keyframes twinkle-2 {
+  80% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    background-color: #fff;
+    opacity: 0.1;
+  }
+}
+
+@keyframes twinkle-2 {
+  80% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    background-color: #fff;
+    opacity: 0.1;
+  }
+}
+
+@-webkit-keyframes twinkle-3 {
+  50% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    background-color: #fff;
+    opacity: 0.5;
+  }
+}
+
+@keyframes twinkle-3 {
+  50% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    background-color: #fff;
+    opacity: 0.5;
+  }
+}
+
+@-webkit-keyframes twinkle-4 {
+  30% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    background-color: silver;
+    opacity: 0.3;
+  }
+}
+
+@keyframes twinkle-4 {
+  30% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    background-color: silver;
+    opacity: 0.3;
+  }
+}
+/*# sourceMappingURL=style.css.map */
