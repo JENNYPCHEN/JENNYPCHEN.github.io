@@ -76,7 +76,7 @@ body{
     background-position: bottom left;
     text-align:center;
     text-transform: uppercase;
-    padding:10%;
+    padding:10% 0;
     img{
       width:200px;
       height:auto;
@@ -93,7 +93,9 @@ body{
   }
 /*à propos*/
 #apropos{
-  padding:15% 5% 10% 5%;
+  display:block;
+  margin-top: 15%;
+  padding:3vw 0; 
   font-family: $font-h2h4p;
   font-size: 1.1rem;
   color:#fff;
@@ -101,8 +103,8 @@ body{
 /*programmation*/
 #programmation{
   background: linear-gradient(180deg, $colordarkblue 0%,$colorblue 100%);
-  padding:2vw 5vw 2vw 5vw;
-  margin:5% 0 5% 0;
+  padding:3vw 2vw;
+  margin:5% 0;
   .date{
     text-transform: uppercase;
     font-family:$font-h1h3;
@@ -178,7 +180,8 @@ body{
   }
 /*actualites*/
 #actualites{
-  padding:5vw;
+  display:block;
+  margin:20% 5%;
   img{
     width:100%;
     height:35%;
@@ -202,7 +205,9 @@ body{
   }
 /*réservation*/
 #reservation {
-  margin:10%;
+  display:block;
+  margin:30% 10%;
+  padding-top:30%;
   label{
     color:#fff;
     font-family:$font-h1h3;
@@ -220,18 +225,18 @@ body{
 .flexcontainer{
   display:flex;
   flex-direction: row;
-  margin:5% 5% 0% 5%;
+  margin:5% 1%;
 }
 .flexbox1{
   width:50%;
   color:#fff;
-  padding:5%;
+  padding:5% 1%;
   font-family:$font-h2h4p;
 }
 .flexbox2{
   width:50%;
   color:#fff;
-  padding:2%;
+  padding:5% 1%;
   font-family:$font-h2h4p;
 }
 .flexbox3{
@@ -285,7 +290,7 @@ body{
   z-index:3;
 }
 .star-1 {
-  margin-top: -10%;
+  margin-top: -19%;
   margin-left: 80%;
   animation-name: twinkle-1;
   animation-duration: 2s;
@@ -309,7 +314,7 @@ body{
   animation-duration: 2s;
 }
 .star-5 {
-  margin-top: 7%;
+  margin-top: -7%;
   margin-left: 13%;
   animation-name: twinkle-1;
   animation-duration: 3s;
