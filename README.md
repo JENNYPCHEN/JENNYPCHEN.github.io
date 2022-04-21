@@ -1,8 +1,10 @@
 # JENNYPCHEN.github.io
-<p>Hi there, <br>
+<p>Hi there, <br><br>
 Thank you for passing by. This is the 3rd project for my PHP/Symfony course. <br>
 In this project, we are asked to create a landing page with stictly HTML and CSS. We are allowed to use Bootstrap, the CSS framework.
 </p>
+
+![project3](https://github.com/JENNYPCHEN/JENNYPCHEN.github.io/blob/main/project2.png)
 
 <h3>Technologies </h3>
 <p>#html #css #bootstrap </p>
@@ -15,5 +17,8 @@ In this project, we are asked to create a landing page with stictly HTML and CSS
 <h3>Website </h3>
 <p><a href="http://le-festival-des-films-de-plein-air.chingyipc.com/">http://le-festival-des-films-de-plein-air.chingyipc.com/</a><p><br>
 <p> Have a lovely day !</p>
-<p>
+
+<p>ChingYi P.C </p>
+<p>http://chingyipc.com</p>
+
 <p>(project completed in August,2021, ReadMe updated in April,2022)</p>
